@@ -320,3 +320,26 @@
     background-color: #E95A08;
     border: none;
 }
+
+/* footer content */
+
+.footer-content{
+    max-width: 1145px;
+    margin: auto;
+    gap: 50px;
+    margin-top: 5rem;
+
+}
+.footer-left p{
+   max-width: 360px;
+}
+
+
+.footer-links ul li{
+    list-style: none;
+   
+}
+.footer-social {
+    font-size: 20px;
+    gap: 50px;
+}
