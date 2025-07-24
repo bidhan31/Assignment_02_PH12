@@ -216,11 +216,8 @@
 
 }
 
-.deal-img{
-    margin-top: 5rem;
-    gap: 20px;
-    
-}
+
+
 .card-container {
   display: flex;
   gap: 20px;
@@ -245,7 +242,8 @@
   height: 206px;
   width: 366px;
   border-radius: 20px;
-   background-size: cover;
+  background-size: cover;
+  
    
   
  
@@ -287,33 +285,36 @@
 
 /* colourful section */
 
-.colorful{
+.newsletter{
     background-image: url("/assets/news-letter-bg.png");
     background-size: cover;
     padding: 60px 20px ;
     height: 533px;
-    width: 100%;
+    width: 1440px;
     margin: auto;
     text-align: center;
-   background-position: center;
+   
    position: relative;
    justify-content: center;
-
-    margin-top: 5rem
-    
-    
-    
+  margin-top: 5rem;
+        
+}
+.colorful{
+    margin: auto;
 }
 .colorful-tittle{
     font-size: 3rem;
     color: white;
   
 }
-.colorful input{
+.input{
+    margin: auto;
+}
+.input input{
     width: 586px;
     height: 50px;
 }
-.color-btn{
+.input .color-btn{
     width: 186px;
     height: 50px;
     color: white ;
@@ -328,6 +329,7 @@
     margin: auto;
     gap: 50px;
     margin-top: 5rem;
+    margin-bottom: 3rem;
 
 }
 .footer-left p{
@@ -337,9 +339,38 @@
 
 .footer-links ul li{
     list-style: none;
+    margin: 15px;
    
 }
 .footer-social {
-    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    
+}
+.footer-social img{
     gap: 50px;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 576px) {
+
+    .navbar, .navbar ul{
+        flex-direction: column;
+    }
+    
+    
+    .card-style{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+     
+       
+    
+   .footer-content, .footer-links{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    
 }
