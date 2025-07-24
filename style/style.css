@@ -221,8 +221,7 @@
 .card-container {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   text-align: center;
   max-width: 1145px;
   margin-top: 5rem;
@@ -232,7 +231,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  overflow: hidden;
+  
   
   
 }
@@ -244,30 +243,30 @@
   border-radius: 20px;
   background-size: cover;
   
-   
   
- 
 }
 
 .card-large {
  height: 423px;
   width: 753px;
   border-radius: 20px;
-  
-  
+   background-size: cover;
 }
 
 .card-text {
-  
+  z-index: 2;
   color: white;
-  margin: auto;
-  
-  
+  margin: 50px;
+  align-content: center;
+    
 }
 
-.card-text h2, .card-text h3 {
-  margin: 0;
+
+.card-text h2 .card-text h3 {
+ 
   font-weight: bold;
+  align-items: center;
+ 
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
   
 
@@ -275,8 +274,7 @@
 
 .btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
+  
   color: white;
   text-decoration: none;
   border-bottom: 2px solid white;
@@ -289,15 +287,12 @@
 .newsletter{
     background-image: url("/assets/news-letter-bg.png");
     background-size: cover;
-    padding: 60px 20px ;
+    align-content: center;
     height: 533px;
     width: 1440px;
     margin: auto;
     text-align: center;
-   
-   position: relative;
-   justify-content: center;
-  margin-top: 5rem;
+   margin-top: 5rem;
         
 }
 .colorful{
@@ -308,14 +303,14 @@
     color: white;
   
 }
-.input{
+.from{
     margin: auto;
 }
-.input input{
+.from input{
     width: 586px;
     height: 50px;
 }
-.input .color-btn{
+.from .color-btn{
     width: 186px;
     height: 50px;
     color: white ;
@@ -356,17 +351,103 @@
 
 @media screen and (max-width: 576px) {
 
-    .navbar, .navbar ul{
-        flex-direction: column;
+    .navbar ul li, .home .shop .about{
+       visibility: hidden;
     }
+    .card-container {
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+      
+    }
+    .banner-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .banner{
+       
+        /* width: 360px;
+        height: 147px; */
+        order: 2;
+    }
+    .banner-img{
+        /* width: 394px;
+        height: 245px; */
+        order: 1;
+    }
+   
     
     
     .card-style{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
+       
+        
+    }
+    .card{
+        /* width: 171px;
+        height: 340.5;
+        gap: 20px; */
+    }
+     .flower-section {
+        display: inline-block;
+        flex-direction: column;
+        text-align: center;
+        
+        
+      
+        
+     }
+     .flower-img{
+        width: 358px;
+        height: 396px;
+        margin-left: 40px;
+        
+     }
+     .flower-img::before{
+        display: none;
+     }
+     .flower{
+        
+        width: 361px;
+        height: 234px;
+     }
+     .flower-tittle{
+        font-size: 2rem;
+     }
+     
+    .deals{
+        width: 393px;
+        height: 117px;
+    }
+    .card-container{
+        height: 581px;
+        width: 361px;
+    } 
+    .card-large{
+        width: 361px;
+        height: 172px;
     }
      
-       
+    .newsletter{
+        width: 393px;
+        height: 276px;
+        
+        
+    }
+    .colorful-tittle{
+        font-size: medium;
+        
+    }
+    .from input {
+        width: 218px;
+        height: 50px;
+        
+    }
+    .from .color-btn{
+        width: 103px;
+        height: 50px;
+    }
     
    .footer-content, .footer-links{
         display: grid;
