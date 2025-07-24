@@ -138,7 +138,7 @@
 .flower-section {
     max-width: 1145px;
     height: 597px;
-    gap: 50px;
+    gap: 30px;
     margin: 7rem auto 0 auto;
     /* margin-top: 4rem; */
     align-items: center;
@@ -231,6 +231,8 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  
   
   
   
@@ -242,6 +244,7 @@
   width: 366px;
   border-radius: 20px;
   background-size: cover;
+   background-color: #C8C8C8;
   
   
 }
@@ -251,6 +254,7 @@
   width: 753px;
   border-radius: 20px;
    background-size: cover;
+    background-color: #C8C8C8;
 }
 
 .card-text {
@@ -380,26 +384,27 @@
     
     .card-style{
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 8fr);
        
         
     }
     .card{
         /* width: 171px;
         height: 340.5;
-        gap: 20px; */
+        gap: 20px;
+        padding-left: 10px 0 10px; */
     }
      .flower-section {
         display: inline-block;
-        flex-direction: column;
-        text-align: center;
+        /* flex-direction: column; */
+        /* text-align: center; */
         
         
       
         
      }
      .flower-img{
-        width: 358px;
+        width: 400px;
         height: 396px;
         margin-left: 40px;
         
@@ -452,6 +457,7 @@
    .footer-content, .footer-links{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 30px;
     }
 
     
