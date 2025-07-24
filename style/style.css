@@ -258,9 +258,10 @@
 }
 
 .card-text {
-  z-index: 2;
-  align-items: center;
+  
   color: white;
+  margin: auto;
+  
   
 }
 
@@ -343,12 +344,12 @@
    
 }
 .footer-social {
-    margin: 20px;
+    
     padding: 10px;
     
 }
-.footer-social img{
-    gap: 50px;
+.footer-social ul a img{
+    margin: 10px;
 }
 
 /* responsive design */
